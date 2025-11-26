@@ -168,7 +168,7 @@ def get_processes_panel():
         [p for p in processes if p['cpu_percent'] is not None],
         key=lambda p: p['cpu_percent'], 
         reverse=True
-    )[:10] # Slicing para tomar solo los primeros 10
+    )
     
     # Construcción de la tabla visual
     table = Table(expand=True, box=box.SIMPLE)
